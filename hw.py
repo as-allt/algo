@@ -13,7 +13,7 @@ def create_array():
     record_linear=0
     record_binary=0
     record_fibnoacci=0
-    for i in range(1,1001):
+    for i in range(1,101):
         
         array_=[]
         for c in range(5):
