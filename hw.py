@@ -34,7 +34,7 @@ def create_array():
             linearSearch(array_[c],n,x)
         end=time.time()
         y_axis_linear.append(end-start)
-        record_linear+=(end-start)
+        record_linear+=(end-start)/5
 
         start=time.time()
         for c in range(5):
@@ -44,7 +44,7 @@ def create_array():
         end=time.time()
         y_axis_binary.append(end-start)
         
-        record_binary+=(end-start)
+        record_binary+=(end-start)/5
 
         start=time.time()
         for c in range(5):
@@ -53,7 +53,7 @@ def create_array():
             fibonacci_search(array_[c],x,n)
         end=time.time()
         y_axis_fibnoacci.append(end-start)
-        record_fibnoacci+=(end-start)
+        record_fibnoacci+=(end-start)/5
         print(end-start)
 
     print("linear:",record_linear)
@@ -137,5 +137,5 @@ def main():
     # fibonacciSearch()
     
     create_array()
-    chart()
+    #chart()
 main()
